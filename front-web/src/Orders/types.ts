@@ -1,3 +1,5 @@
+import { join } from "path"
+
 export type Product = {
     id: number;
     name: string;
@@ -17,8 +19,5 @@ type ProductId = {
 }
 
 export type OrderPayload = {
-    address: string;
-    latitude: number;
-    longitude: number;
     products: ProductId[];
-}
+} & OrderLocationData;
