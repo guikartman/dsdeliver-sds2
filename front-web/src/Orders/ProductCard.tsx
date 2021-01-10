@@ -1,5 +1,3 @@
-import { type } from "os";
-import { ReactComponent as Pizza} from "./pizza.svg";
 import { Product } from "./types";
 
 type Props = {
